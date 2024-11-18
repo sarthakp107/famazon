@@ -1,8 +1,11 @@
 import React from 'react'
+import {Container} from '@chakra-ui/react';
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <Container maxW='container.xl' py={12}>
+
+    </Container>
   )
 }
 
