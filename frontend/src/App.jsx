@@ -15,7 +15,7 @@ function App() {
       <Route path = "/" element = {<HomePage />} />
       <Route path = "/create" element = {<CreatePage />} />
     </Routes>
-    <Footer />
+    {/* <Footer /> */}
     </Box>
   )
 }
