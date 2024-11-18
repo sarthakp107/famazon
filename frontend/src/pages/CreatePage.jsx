@@ -3,10 +3,7 @@ import React from 'react'
 import { useState } from 'react';
 import { useColorModeValue } from '../components/ui/color-mode';
 import { useProductStore } from '../store/product';
-import { useToast } from '@chakra-ui/toast';
-
-
-
+import { createStandaloneToast } from '@chakra-ui/toast'
 
 
 
@@ -18,7 +15,8 @@ const CreatePage = () => {
         image: "",
     });
 
-    const toast = useToast();
+    const { toast } = createStandaloneToast()
+
     const {createProduct} = useProductStore();
     const handleAddProduct = async() => {
       
